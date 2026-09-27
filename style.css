@@ -323,3 +323,146 @@ footer {
     font-size: large;
     font-style: italic;
 }
+
+body.about {
+    background-color: black;
+    color: rgb(242, 243, 243);
+}
+
+.about-hero {
+    background-image: url(images/space/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.about-hero p {
+    font-size: 20px;
+    color: rgb(190, 200, 230);
+    margin-top: 10px;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: 3px solid rgb(23, 39, 116);
+    padding-left: 24px;
+}
+
+.about-block.reverse {
+    border-left: none;
+    border-right: 3px solid rgb(23, 39, 116);
+    padding-left: 0;
+    padding-right: 24px;
+    text-align: right;
+}
+
+.about-block h2 {
+    font-size: 28px;
+    color: rgb(150, 170, 255);
+    margin: 0;
+}
+
+.about-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(220, 220, 225);
+}
+
+.about-values h2 {
+    font-size: 28px;
+    color: rgb(150, 170, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.value-card {
+    background: linear-gradient(to bottom, rgb(35, 28, 150), rgb(15, 12, 70));
+    border-radius: 16px;
+    padding: 30px;
+    flex: 1 1 220px;
+    max-width: 260px;
+    text-align: center;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: aliceblue;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: rgb(220, 220, 225);
+    line-height: 1.5;
+}
+
+.about-visit {
+    background-color: rgb(15, 12, 40);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-visit h2 {
+    font-size: 28px;
+    color: rgb(150, 170, 255);
+    margin-bottom: 16px;
+}
+
+.about-visit p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(220, 220, 225);
+    margin: 8px 0;
+}
+
+.about-footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid rgb(50, 50, 80);
+    color: rgb(180, 180, 190);
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-block.reverse {
+        border-right: none;
+        border-left: 3px solid rgb(23, 39, 116);
+        padding-left: 24px;
+        padding-right: 0;
+        text-align: left;
+    }
+}
