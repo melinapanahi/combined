@@ -329,7 +329,7 @@ body.about {
     color: rgb(242, 243, 243);
 }
 
-.about-hero {
+.about1 {
     background-image: url(images/space/background5.jpg);
     background-size: cover;
     background-position: center;
@@ -339,21 +339,20 @@ body.about {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(0, 0, 0);
 }
 
-.about-hero h1 {
+.about1 h1 {
     font-size: 48px;
     margin: 0;
 }
 
-.about-hero p {
+.about1 p {
     font-size: 20px;
     color: rgb(190, 200, 230);
     margin-top: 10px;
 }
 
-.about-content {
+.about2 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -362,7 +361,7 @@ body.about {
     gap: 60px;
 }
 
-.about-block {
+.about3 {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -370,41 +369,41 @@ body.about {
     padding-left: 24px;
 }
 
-.about-block.reverse {
+.about4 {
     border-left: none;
     border-right: 3px solid rgb(23, 39, 116);
     padding-left: 0;
     padding-right: 24px;
-    text-align: right;
+    text-align: center;
 }
 
-.about-block h2 {
+.about3 h2 {
     font-size: 28px;
     color: rgb(150, 170, 255);
     margin: 0;
 }
 
-.about-block p {
+.about3 p {
     font-size: 18px;
     line-height: 1.6;
     color: rgb(220, 220, 225);
 }
 
-.about-values h2 {
+.about5 h2 {
     font-size: 28px;
     color: rgb(150, 170, 255);
     text-align: center;
     margin-bottom: 30px;
 }
 
-.values-grid {
+.about6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
 }
 
-.value-card {
+.about7 {
     background: linear-gradient(to bottom, rgb(35, 28, 150), rgb(15, 12, 70));
     border-radius: 16px;
     padding: 30px;
@@ -413,39 +412,39 @@ body.about {
     text-align: center;
 }
 
-.value-card h3 {
+.about7 h3 {
     font-size: 22px;
     margin-bottom: 12px;
     color: aliceblue;
 }
 
-.value-card p {
+.about7 p {
     font-size: 16px;
     color: rgb(220, 220, 225);
     line-height: 1.5;
 }
 
-.about-visit {
+.about8 {
     background-color: rgb(15, 12, 40);
     border-radius: 16px;
     padding: 40px;
     text-align: center;
 }
 
-.about-visit h2 {
+.about8 h2 {
     font-size: 28px;
     color: rgb(150, 170, 255);
     margin-bottom: 16px;
 }
 
-.about-visit p {
+.about8 p {
     font-size: 18px;
     line-height: 1.6;
     color: rgb(220, 220, 225);
     margin: 8px 0;
 }
 
-.about-footer {
+.about9 {
     text-align: center;
     padding: 24px;
     border-top: 1px solid rgb(50, 50, 80);
@@ -454,11 +453,11 @@ body.about {
 }
 
 @media (max-width: 700px) {
-    .about-hero h1 {
+    .about1 h1 {
         font-size: 32px;
     }
 
-    .about-block.reverse {
+    .about4 {
         border-right: none;
         border-left: 3px solid rgb(23, 39, 116);
         padding-left: 24px;
