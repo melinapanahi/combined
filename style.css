@@ -1,0 +1,324 @@
+body{
+    background-color: black;
+    color: rgb(242, 243, 243);
+    margin: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 5px 2px;
+    border-bottom: 1px solid white;
+}
+
+.links{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.links a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#read{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#read:hover{
+    cursor: pointer;
+}
+
+.top {
+    background-image: url(images/space/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.presentation {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    font-size: large;
+}
+
+.about-cosmos {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 40%;
+    font-size: large;
+}
+
+.explore-section {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    width: 35%;
+    font-size: large;
+}
+
+#button1{
+    background-color: rgb(8, 35, 125);
+    width: 50%;
+    height: 30px;
+    border: 1px solid royalblue;
+    color: azure;
+}
+
+#button1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#bottom{
+    background-image: url(images/space/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+#bottom nav button {
+    display: grid;
+    grid-row: auto;
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+}
+
+#bottom nav button:hover{
+    transform: scale(1.05);
+}
+
+#bottom nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 3%;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.explore > div {
+    flex-shrink: 0;
+    text-align: right;
+    font-size: larger;
+}
+
+.planet-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.planet-btn img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.planet-btn img.saturn-img {
+    border-radius: 0;
+    object-fit: contain;
+    width: 120px;
+    height: 80px;
+}
+
+.planet-btn span{
+    color: aliceblue;
+}
+
+.solar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+#pl{
+    display: flex;
+    justify-content: center;
+}
+
+#pl img{
+    width: 260px;
+    height: 260px;
+    max-width: 80vw;
+    border-radius: 50%;
+}
+
+#pl img.saturn-img {
+    border-radius: 0;
+    object-fit: contain;
+}
+
+#info {
+    max-width: 320px;
+    flex: 1 1 280px;
+}
+
+.month{
+    background: linear-gradient(to bottom, rgba(41, 41, 43, 0.432), rgb(15, 12, 70));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    padding: 24px;
+    flex: 1 1 260px;
+    max-width: 320px;
+}
+
+.md{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.md h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+#ms{
+    background-color: rgba(31, 60, 202, 0.868);
+    color: aliceblue;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#chosen-month {
+    width: 100%;
+    text-align: center;
+    height: 220px; /* fast höjd, justera efter vad som passar dina bilder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chosen-month img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid white;
+}
+
+@media (max-width: 900px) {
+    .top {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .presentation,
+    .about-cosmos,
+    .explore-section {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+        transform: none;
+    }
+
+    .explore {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .explore > div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .planet-btn img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .planet-btn img.saturn-img {
+        width: 85px;
+        height: 55px;
+    }
+
+    #pl img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .links {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+}
+
+.pris{
+    background-image: url(images/space/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+#ålder{
+    padding: 20px;
+    width: 10%;
+    background-color: rgb(13, 13, 53);
+    border: 0px;
+    font-size: large;
+    color: aliceblue;
+}
+#submit{
+    padding: 20px;
+    background-color: rgb(67, 67, 212);
+    border: 0px;
+    color: azure;
+}
+#submit:hover{
+    cursor: pointer;
+}
+#list{
+    font-size: large;
+    font-style: italic;
+}

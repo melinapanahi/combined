@@ -1,0 +1,110 @@
+.form-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#contact-form {
+  max-width: 500px;     /* limited the width of the form*/
+  margin: 0 auto 32px;  /* margin: 0 auto - align form in the center */
+}
+
+.contact-info {
+  text-align: center;   /* Put contacts in the center */
+  margin-top: 32px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+/* ----Fields of the form -------- */
+.field {
+  margin-bottom: 16px;
+}
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  color: #9aa5bd;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;          
+  box-sizing: border-box; 
+  padding: 12px;
+  background-color: #151f38;
+  border: 1px solid #2a3350;
+  border-radius: 6px;
+  color: #e8ecf5;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.field textarea {
+  min-height: 120px;
+  resize: vertical;     /* User can change size only vertically */
+}
+
+/* style placeholders*/
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #5f6e8d;
+}
+
+/* ---style the button--- */
+.btn {
+  display: inline-block;
+  width: 100%;         
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+  background-color: #3fd0c9;
+  color: #10182b;      
+}
+
+.btn-primary:hover {
+  background-color: #32b5ae; /* darker color with hover */
+}
+
+.btn-primary:active {
+  transform: scale(0.98);    
+}
+
+#answer {
+  display: none;
+  max-width: 500px;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: #10182b;
+  border: 1px solid #3fd0c9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ----- Responsive design ----- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;       
+  }
+
+  .form-header h1 {
+    font-size: 1.6rem;     /* Make smaller header */
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    padding: 10px;         
+    font-size: 0.95rem;    
+  }
+
+  .btn {
+    padding: 10px;         /* Make button smaller */
+  }
+}

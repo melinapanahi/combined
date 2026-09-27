@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planets>
+    <planet id="mercury">
+        <name>Mercury</name>
+        <p>Mercury is the smallest planet in our solar system and the closest to the Sun. It has no atmosphere to retain heat, causing extreme temperature swings between day and night.</p>
+        <distans>57.9 million km</distans>
+        <diameter>4 879 km</diameter>
+        <moon>0</moon>
+        <dayLength>59 Earth days</dayLength>
+        <temp>167 °C</temp>
+    </planet>
+
+    <planet id="venus">
+        <name>Venus</name>
+        <p>Venus is the second planet from the Sun and the hottest in our solar system due to a thick, toxic atmosphere that traps heat. It rotates in the opposite direction to most planets.</p>
+        <distans>108.2 million km</distans>
+        <diameter>12 104 km</diameter>
+        <moon>0</moon>
+        <dayLength>243 Earth days</dayLength>
+        <temp>464 °C</temp>
+    </planet>
+
+    <planet id="mars">
+        <name>Mars</name>
+        <p>Mars, known as the Red Planet, has a thin atmosphere and the largest volcano in the solar system, Olympus Mons. Evidence suggests it once had liquid water on its surface.</p>
+        <distans>227.9 million km</distans>
+        <diameter>6 779 km</diameter>
+        <moon>2</moon>
+        <dayLength>24.6 hours</dayLength>
+        <temp>-65 °C</temp>
+    </planet>
+
+    <planet id="jupiter">
+        <name>Jupiter</name>
+        <p>Jupiter is the largest planet in our solar system, a gas giant known for its Great Red Spot, a giant storm larger than Earth that has raged for centuries.</p>
+        <distans>778.5 million km</distans>
+        <diameter>139 820 km</diameter>
+        <moon>95</moon>
+        <dayLength>9.9 hours</dayLength>
+        <temp>-110 °C</temp>
+    </planet>
+
+    <planet id="saturn">
+        <name>Saturn</name>
+        <p>Saturn is famous for its stunning ring system made of ice and rock particles. It is the least dense planet in our solar system and could theoretically float in water.</p>
+        <distans>1.4 billion km</distans>
+        <diameter>116 460 km</diameter>
+        <moon>146</moon>
+        <dayLength>10.7 hours</dayLength>
+        <temp>-140 °C</temp>
+    </planet>
+
+    <planet id="uranus">
+        <name>Uranus</name>
+        <p>Uranus is an ice giant that rotates on its side, likely due to a massive collision long ago. It has a faint ring system and appears pale blue due to methane in its atmosphere.</p>
+        <distans>2.9 billion km</distans>
+        <diameter>50 724 km</diameter>
+        <moon>28</moon>
+        <dayLength>17.2 hours</dayLength>
+        <temp>-195 °C</temp>
+    </planet>
+
+    <planet id="neptune">
+        <name>Neptune</name>
+        <p>Neptune is the farthest known planet from the Sun, a windy ice giant with the strongest winds in the solar system, reaching speeds of over 2,000 km/h.</p>
+        <distans>4.5 billion km</distans>
+        <diameter>49 244 km</diameter>
+        <moon>16</moon>
+        <dayLength>16.1 hours</dayLength>
+        <temp>-200 °C</temp>
+    </planet>
+</planets>

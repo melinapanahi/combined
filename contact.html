@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keep in touch with The Cosmos Museum and Planetarium - visiting.">
+    <title>Contact us | The Cosmos museum</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <img src="images/logo/logo.png" alt="logo" width="100px">
+        </div>
+        <nav class="links">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="prices.html">Prices</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="form-header">
+            <h1>Questions before your visit?</h1>
+            <p>Send us a message.</p>
+        </div>
+
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@mail.com" required>
+          </div>
+
+          <div class="field">
+            <label for="subject">What is this about?</label>
+            <select id="subject">
+              <option value="general">General question</option>
+              <option value="tickets">Entrance tickets; prices</option>
+              <option value="planetarium">Planetarium show times</option>
+              <option value="groups">Group or school booking</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+
+        <div id="answer">
+          <p id="answer-text"></p>
+        </div>
+
+        <address class="contact-info">
+          <p><strong>Address:</strong> Spacevägen 1, Stockholm</p>
+          <p><strong>Phone:</strong> +46 8 555 123 00</p>
+          <p><strong>Email:</strong> hello@kosmosmuseum.se</p>
+          <p><strong>Hours:</strong> Tue-Sun 10-18, Mon closed</p>
+        </address>
+    </main>
+
+    <footer>
+        <small>
+        Copyright © 2026 The Cosmos Museum. All Rights Reserved.
+        </small>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+</body>
+</html>
